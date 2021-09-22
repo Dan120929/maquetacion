@@ -35,6 +35,7 @@ $(document).ready(function () {
     },
   ];
   console.log(posts);
+
   // Recorrer el JSON para enviar al index.HTML
   posts.forEach((item) => {
     var post = `<article class="post">
@@ -47,5 +48,23 @@ $(document).ready(function () {
                 </article>`;
     //console.log(post);
     $("#posts").append(post);
+  });
+
+  //Selector de tema
+  var theme = $("#theme");
+
+  $("#to-red").click(function () {
+    theme.attr("href", "css/red.css");
+    alert("La página ha cambiado de tema");
+  });
+
+  $("#to-green").click(function () {
+    theme.attr("href", "css/green.css");
+    alert("La página ha cambiado de tema");
+  });
+
+  $("#to-blue").click(function () {
+    theme.attr("href", "css/blue.css");
+    alert("La página ha cambiado de tema");
   });
 });
