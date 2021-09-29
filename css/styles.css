@@ -117,9 +117,10 @@ body {
 #sidebar p {
   text-align: justify;
 }
+/*Para el tamaño del alto del slider*/
 .bx-wrapper,
 .bx-viewport {
-  height: 250px !important;
+  height: 300px !important;
 }
 form input[type="text"],
 form input[type="email"],
