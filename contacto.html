@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css" />
 
-    <!--Slider-->
+    <!--JQuerty-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!--SLider JS Function-->
@@ -36,14 +36,16 @@
         <nav id="menu">
           <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="biografia.html">Biografía</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="">Portafolio</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </header>
+
       <section id="contenido">
-        Contacto
+        <div id="box">
+          <!--Cargar formulario-->
+        </div>
         <aside id="sidebar">
           <div id="about">
             <h4>¿Quien Soy?</h4>
@@ -64,7 +66,11 @@
                         <input type="email" name="email" id=""> -->
               <label for="password">contraseña</label>
               <input type="password" name="password" id="" />
-              <input type="submit" value="Enviar" />
+              <input
+                type="submit"
+                value="Enviar"
+                formaction="portafolio.html"
+              />
             </form>
           </div>
           <!--Footer-->
