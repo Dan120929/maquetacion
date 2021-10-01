@@ -97,6 +97,8 @@ $(document).ready(function () {
   if (window.location.href.indexOf("contacto") > -1) {
     $.validate({
       lang: "es",
+
+      //
     });
   }
 });
