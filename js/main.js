@@ -92,4 +92,11 @@ $(document).ready(function () {
       location.reload();
     });
   }
+
+  // Activar Jquerty validator
+  if (window.location.href.indexOf("contacto") > -1) {
+    $.validate({
+      lang: "es",
+    });
+  }
 });

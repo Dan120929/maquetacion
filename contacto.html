@@ -16,9 +16,9 @@
     <script type="text/javascript" src="js/main.js"></script>
     <title>Maquetación</title>
 
-    <!--Moment-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+    <!--JQerty Validator-->
+    >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
   </head>
 
   <body>
@@ -48,13 +48,23 @@
           <h2>Contacto</h2>
           <form action="" id="form_contact" method="POST">
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="" />
+            <input
+              type="text"
+              name="name"
+              id=""
+              data-validation="alphanumeric"
+            />
 
             <label for="lastname">Apellidos</label>
-            <input type="text" name="lastname" id="" />
+            <input
+              type="text"
+              name="lastname"
+              id=""
+              data-validation="alphanumeric"
+            />
 
             <label for="email">e-mail</label>
-            <input type="email" name="email" id="" />
+            <input type="email" name="email" id="" data-validation="email" />
 
             <label for="genero">Genero</label>
             <select name="genero" id="">
@@ -64,10 +74,10 @@
             </select>
 
             <label for="date">Fecha de nacimiento</label>
-            <input type="text" name="date" id="" />
+            <input type="text" name="date" id="" data-validation="date" />
 
             <label for="age">Edad</label>
-            <input type="number" name="age" id="" />
+            <input type="number" name="age" id="" data-validation="number" />
 
             <input type="submit" value="Enviar" />
           </form>
